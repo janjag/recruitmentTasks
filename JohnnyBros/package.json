@@ -1,0 +1,32 @@
+{
+  "name": "tools",
+  "version": "1.0.0",
+  "description": "1.0.0",
+  "main": "index.html",
+  "scripts": {
+    "test": ""
+  },
+  "keywords": [],
+  "author": {
+    "name": "Jan Jagiela (janjag)",
+    "email": "janjag@humanistcanco.de"
+  },
+  "homepage": "",
+  "devDependencies": {
+    "autoprefixer": "latest",
+    "browser-sync": "latest",
+    "cssnano": "latest",
+    "express": "latest",
+    "grunt": "latest",
+    "grunt-autoprefixer": "latest",
+    "grunt-browser-sync": "latest",
+    "grunt-contrib-imagemin": "^2.0.1",
+    "grunt-contrib-uglify": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-postcss": "latest",
+    "grunt-sass": "latest",
+    "imagemin-mozjpeg": "^7.0.0",
+    "node-sass": "latest",
+    "pixrem": "latest"
+  }
+}
