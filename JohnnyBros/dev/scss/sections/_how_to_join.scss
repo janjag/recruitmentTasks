@@ -1,3 +1,9 @@
+.how-to-join {
+    @include bp(mq1024) {
+        margin-bottom: 14rem;
+    }
+}
+
 .blockquote {
     position: relative;
     z-index: 1;

@@ -12,6 +12,20 @@
     vertical-align: top;
     margin: 2rem;
     width: 18rem;
+
+    @include bp(mq1240) {
+        margin: 2rem 6rem;
+    }
+
+    @include bp(mq1024) {
+        margin: 2rem;
+        width: calc(32% - 4rem);
+    }
+
+    @include bp(mq768) {
+        margin: 2rem 1rem;
+        width: calc(32% - 2rem);
+    }
 }
 
 .first-prize {
@@ -28,4 +42,9 @@
     justify-content: center;
     height: 10rem;
     margin-bottom: 1.5rem;
+}
+
+.reward-name {
+    display: inline-block;
+    max-width: 18rem;
 }

@@ -1,11 +1,28 @@
+.contact {
+    @include bp(mq1024) {
+        display: block;
+    }
+}
+
 .contact-img {
-    width: 55.5rem;
+    width: 46%;
     height: 42rem;
     object-fit: cover;
+
+    @include bp(mq1024) {
+        width: 100%;
+        height: auto;
+        margin-bottom: 4rem;
+    }
 }
 
 .contact-form {
-    width: calc(100% - 63rem);
+    width: 50%;
+
+    @include bp(mq1024) {
+        width: 100%;
+        padding: 0 3rem;
+    }
 
     .flex-row {
         margin-top: -1rem;

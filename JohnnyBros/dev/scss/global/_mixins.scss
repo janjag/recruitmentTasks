@@ -1,5 +1,11 @@
 @mixin bp($point) {
-    @if $point == mq768 {
-      @media screen and (max-width: 48em) /* up to 768px  */ { @content; }
-    }
+  @if $point == mq1240 {
+    @media screen and (max-width: 77.5em) /* up to 1240px  */ { @content; }
+  }
+  @if $point == mq1024 {
+    @media screen and (max-width: 64em) /* up to 1024px  */ { @content; }
+  }
+  @if $point == mq768 {
+    @media screen and (max-width: 48em) /* up to 768px  */ { @content; }
+  }
 }
