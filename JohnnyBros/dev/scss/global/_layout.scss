@@ -3,6 +3,7 @@
     max-width: 123rem;
     padding: 0 1.5rem;
     margin: 0 auto;
+    position: relative;
 }
 
 .flex-row {
@@ -10,4 +11,10 @@
 }
 .flex-align-center {
     align-items: center;
+}
+.flex-space-between {
+    justify-content: space-between;
+}
+.flex-space-around {
+    justify-content: space-around;
 }

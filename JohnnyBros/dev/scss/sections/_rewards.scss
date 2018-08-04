@@ -1,0 +1,31 @@
+.rewards {
+    text-align: center;
+} 
+
+.reward-title {
+    display: inline-block;
+    max-width: 19em;
+}
+
+.reward {
+    display: inline-block;
+    vertical-align: top;
+    margin: 2rem;
+    width: 18rem;
+}
+
+.first-prize {
+    color: $color1;
+}
+
+.reward-number {
+    color: $font-color-3;
+}
+
+.reward-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10rem;
+    margin-bottom: 1.5rem;
+}

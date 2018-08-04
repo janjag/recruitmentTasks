@@ -1,0 +1,55 @@
+.contact-img {
+    width: 55.5rem;
+    height: 42rem;
+    object-fit: cover;
+}
+
+.contact-form {
+    width: calc(100% - 63rem);
+
+    .flex-row {
+        margin-top: -1rem;
+    }
+}
+
+.input {
+    color: $font-color-1;
+    font-family: $font1;
+    font-weight: 400;
+    padding: 1rem 0;
+    margin-bottom: 1.5rem;
+    border-bottom: .1rem solid $color4;
+    width: 49%;
+    transition: all .2s ease-in-out;
+
+    ::placeholder {
+        color: $font-color-2;
+    }
+
+    &:focus {
+        background-color: $color3-d;
+        border: .1rem solid $color4;
+        border-radius: .4rem;
+        padding: 1rem 2rem;
+    }
+}
+
+.textarea {
+    color: $font-color-1;
+    font-family: $font1;
+    font-weight: 400;
+    padding: 2rem 0;
+    border-bottom: .1rem solid $color4;
+    height: 11rem;
+    width: 100%;
+    resize: none;
+    margin-bottom: 1.5rem;
+    transition: all .2s ease-in-out;
+
+    &:focus {
+        background-color: $color3-d;
+        border: .1rem solid $color4;
+        border-radius: .4rem;
+        padding: 2rem;
+    }
+}

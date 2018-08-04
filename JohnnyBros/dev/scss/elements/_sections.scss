@@ -1,0 +1,44 @@
+.section {
+    clear: both;
+    display: block;
+    padding: 11rem 0 8rem;
+
+    &.darker {
+        background-color: $color3-d;
+    }
+}
+
+.main-box {
+    background-color: $white;
+    border-radius: .4rem;
+    padding: 4rem;
+    position: relative;
+    z-index: 2;
+    max-width: 60rem;
+    box-shadow: 0 .3rem .6rem 0 $shadow;
+}
+.main-box-text {
+    margin-bottom: 2em;
+}
+
+.img-box-wrapper {
+    position: absolute;
+    right: 0;
+    top: 7rem;
+    width: 69.3rem;
+
+    .box-img {
+        display: block;
+        width: 100%;
+    }
+}
+
+.secondary-box {
+    @extend .img-box-wrapper;
+
+    width: 65.8rem;
+    padding: 4rem;
+    padding-left: 12rem;
+    background-color: $color1;
+    color: $white;
+}

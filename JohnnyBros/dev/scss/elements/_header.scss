@@ -1,8 +1,13 @@
 .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     height: 100vh;
+    max-height: 72rem;
     background: $color2 url(/assets/img/pp-main-background.jpg) center no-repeat;
     background-size: cover;
-    padding-top: 30vh;
+    padding: 8rem 0 3rem;
     color: $white;
     text-align: center;
 }
@@ -23,4 +28,15 @@
     border-radius: 50%;
     border: .1rem solid $white;
     color: $white;
+    animation: verticalMove 2s ease-in-out .2s infinite forwards;
+}
+
+@keyframes verticalMove {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(100%);
+    }
 }

@@ -1,0 +1,31 @@
+.blockquote {
+    position: relative;
+    z-index: 1;
+
+    &::before {
+        content: '\f10e';
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: -5rem;
+        font-family: 'fa-custom';
+        font-size: 2.4rem;
+        opacity: .65;
+    }
+}
+.quote-author {
+    margin-top: 2rem;
+}
+.quote-author-img {
+    background-color: $white;
+    float: left;
+    margin-right: 2rem;
+    border-radius: 50%;
+    overflow: hidden;
+    height: 6.4rem;
+    width: 6.4rem;
+}
+
+.quote-author-name {
+    margin: .5em 0 0;
+}
