@@ -1,0 +1,38 @@
+.navbar {
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    padding: 1rem 0;
+}
+
+.main-nav {
+    margin-left: auto;
+    list-style: none;
+}
+
+.nav-item {
+    display: inline-block;
+
+    &:not(:first-of-type) {
+        margin-left: 4rem;
+    }
+}
+
+.nav-link {
+    color: $white;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color .2s ease-in-out;
+
+    &:visited {
+        color: $white;
+    }
+
+    &.active,
+    &:hover {
+        color: $color1;
+    }
+}

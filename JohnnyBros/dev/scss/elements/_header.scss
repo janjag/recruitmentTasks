@@ -1,0 +1,26 @@
+.header {
+    height: 100vh;
+    background: $color2 url(/assets/img/pp-main-background.jpg) center no-repeat;
+    background-size: cover;
+    padding-top: 30vh;
+    color: $white;
+    text-align: center;
+}
+
+.page-info{
+    display: block;
+    max-width: 40em;
+    margin: 0 auto 4em;
+}
+
+.see-more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3.6rem;
+    width: 3.6rem;
+    margin: 4em auto 1em;
+    border-radius: 50%;
+    border: .1rem solid $white;
+    color: $white;
+}
