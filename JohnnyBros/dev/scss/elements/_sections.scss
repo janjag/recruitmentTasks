@@ -8,6 +8,10 @@
     }
 }
 
+.clearfix {
+    column-span: all;
+}
+
 .main-box {
     background-color: $white;
     border-radius: .4rem;
@@ -16,6 +20,10 @@
     z-index: 2;
     max-width: 60rem;
     box-shadow: 0 .3rem .6rem 0 $shadow;
+
+    &.floated {
+        float: left;
+    }
 }
 .main-box-text {
     margin-bottom: 2em;
@@ -34,11 +42,11 @@
 }
 
 .secondary-box {
-    @extend .img-box-wrapper;
-
+    float: right;
     width: 65.8rem;
     padding: 4rem;
-    padding-left: 12rem;
+    padding-left: 14rem;
     background-color: $color1;
     color: $white;
+    margin: 7rem 0 0 -7rem
 }
