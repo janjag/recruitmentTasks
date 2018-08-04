@@ -16,6 +16,7 @@ module.exports = function (grunt) {
         options: {
           watchTask: true,
           server: "./",
+          directory: true,
           ui: {
             port: 8889,
             weinre: {
@@ -73,7 +74,7 @@ module.exports = function (grunt) {
         },
         files: [{
             expand: true,
-            src: ['/img/*.{png,jpg,gif}'],
+            src: ['img/*.{png,jpg,gif}'],
             dest: 'assets/'
         }]
       }
