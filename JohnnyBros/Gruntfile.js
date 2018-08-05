@@ -16,7 +16,7 @@ module.exports = function (grunt) {
         options: {
           watchTask: true,
           server: "./",
-          directory: true,
+          // directory: true,
           ui: {
             port: 8889,
             weinre: {

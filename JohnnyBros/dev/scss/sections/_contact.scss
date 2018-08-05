@@ -70,3 +70,21 @@
         padding: 2rem;
     }
 }
+
+.error {
+    color: $error;
+    border-color: $error;
+
+    &:focus {
+        border-color: inherit;
+    }
+}
+
+.success {
+    color: $color1;
+    border-color: $color1;
+
+    &:focus {
+        border-color: inherit;
+    }
+}

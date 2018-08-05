@@ -10,6 +10,10 @@
     &.darker {
         background-color: $color3-d;
     }
+
+    &.home {
+        padding: 0;
+    }
 }
 
 .clearfix {
