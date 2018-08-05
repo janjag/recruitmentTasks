@@ -14,14 +14,24 @@
         height: auto;
         margin-bottom: 4rem;
     }
+
+    @include bp(mq560) {
+        margin: 0 -1.5rem 4rem;
+        width: calc(100% + 3rem);
+    }
 }
 
 .contact-form {
     width: 50%;
+    margin-bottom: 3rem;
 
     @include bp(mq1024) {
         width: 100%;
         padding: 0 3rem;
+    }
+
+    @include bp(mq560) {
+        padding: 0 1.5rem;
     }
 
     .flex-row {

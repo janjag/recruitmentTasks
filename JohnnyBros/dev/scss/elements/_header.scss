@@ -10,12 +10,20 @@
     padding: 8rem 0 3rem;
     color: $white;
     text-align: center;
+
+    @include bp(mq560) {
+        height: auto;
+    }
 }
 
 .page-info{
     display: block;
     max-width: 40em;
     margin: 0 auto 4em;
+
+    @include bp(mq560) {
+        margin-bottom: 1.5em;
+    }
 }
 
 .see-more {
@@ -29,6 +37,10 @@
     border: .1rem solid $white;
     color: $white;
     animation: verticalMove 2s ease-in-out .2s infinite forwards;
+
+    @include bp(mq560) {
+        margin: 1em auto;   
+    }
 }
 
 @keyframes verticalMove {

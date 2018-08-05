@@ -188,6 +188,7 @@
         console.log(element.value);
         element.classList.add('js-touched');
         if (element.value.length < 2) {
+            element.classList.remove('success');
             element.classList.add('error');
         } else {
             element.classList.remove('error');

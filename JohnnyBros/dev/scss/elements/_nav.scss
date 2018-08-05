@@ -6,6 +6,10 @@
     z-index: 10;
     padding: 1rem 0;
 
+    @include bp(mq560) {
+        top: 0;
+    }
+
     &.fixed {
         position: fixed;
         top: 0;
@@ -20,6 +24,7 @@
 }
 
 .menu-toggle {
+    margin-top: -0.7rem;
     margin-left: auto;
     position: relative;
     z-index: 4;
@@ -117,7 +122,10 @@
 
     @include bp(mq768) {
         margin: 2rem 0;
+    }
 
+    @include bp(mq560) {
+        margin: 1.25rem 0;
     }
 
     &:not(:first-of-type) {

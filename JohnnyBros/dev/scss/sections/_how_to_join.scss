@@ -17,6 +17,14 @@
         font-family: 'fa-custom';
         font-size: 2.4rem;
         opacity: .65;
+
+        @include bp(mq560) {
+            left: unset;
+            top: 2rem;
+            right: 3rem;
+            font-size: 8.8rem;
+            opacity: .3;
+        }
     }
 }
 .quote-author {

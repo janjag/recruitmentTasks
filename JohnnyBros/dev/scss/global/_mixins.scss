@@ -8,4 +8,7 @@
   @if $point == mq768 {
     @media screen and (max-width: 48em) /* up to 768px  */ { @content; }
   }
+  @if $point == mq560 {
+    @media screen and (max-width: 35em) /* up to 560px  */ { @content; }
+  }
 }
