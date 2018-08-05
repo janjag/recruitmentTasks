@@ -8,9 +8,9 @@ module.exports = function (grunt) {
       dev: {
         bsFiles: {
           src: [
-            "assets/*.css",
+            "dist/*.css",
             "*.html",
-            "assets/*.js"
+            "dist/*.js"
           ]
         },
         options: {
@@ -37,7 +37,7 @@ module.exports = function (grunt) {
         ]
       },
       dist: {
-        src: "assets/*.css"
+        src: "dist/*.css"
       }
     },
     sass: {
@@ -48,7 +48,7 @@ module.exports = function (grunt) {
       },
       dist: {
         files: {
-          "assets/main.min.css": "dev/scss/main.scss"
+          "dist/main.min.css": "dev/scss/main.scss"
         }
       }
     },
@@ -61,7 +61,8 @@ module.exports = function (grunt) {
       },
       prod: {
         files: {
-          "assets/app.min.js": ["dev/js/app.js"]
+          "dist/app.min.js": ["dev/js/app.js"],
+          "dist/scrollit.min.js": ["dev/js/scrollit.js"]
         }
       }
     },
@@ -75,7 +76,7 @@ module.exports = function (grunt) {
         files: [{
             expand: true,
             src: ['img/*.{png,jpg,gif}'],
-            dest: 'assets/'
+            dest: 'dist/'
         }]
       }
     },
